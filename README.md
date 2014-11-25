@@ -35,10 +35,13 @@ This repo adds a similar functionality to latex. The LaTeX code
 
 ```latex
 \usepackage{hyperref} % required by linking.sty
-\usepackage{linking.sty} % include in your compile folder
+\usepackage{linking}  % include linking.sty in your compile folder
+
+% Markdown equivalent: [Bode Miller]:https://...
 \SSdefine{Bode Miller}{https://en.wikipedia.org/wiki/Bode_Miller}
 
 \begin{document}
+% Markdown equivalent: [Bode Miller] has won...
 \SSlink{Bode Miller} has won 6 Olympic medals and 5 World Cup medals.
 \end{document}
 ```
