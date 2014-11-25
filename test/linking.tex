@@ -1,0 +1,12 @@
+
+%% writing the markdown link syntax
+% defining the defining command
+\newcommand{\SSdefine}[2]{
+    \expandafter\newcommand\csname #1\endcsname{
+        \href{#2}{#1}
+    }
+}
+% linking with \SSlink{this} to display ``this'' while linking to link defined by \SSdefine
+\newcommand{\SSlink}[1]{
+    \csname #1\endcsname
+}
