@@ -34,6 +34,8 @@ program latex had something similar.
 This repo adds a similar functionality to latex. The LaTeX code
 
 ```latex
+\usepackage{hyperref} % required by linking.sty
+\usepackage{linking.sty} % include in your compile folder
 \SSdefine{Bode Miller}{https://en.wikipedia.org/wiki/Bode_Miller}
 
 \begin{document}
@@ -43,12 +45,8 @@ This repo adds a similar functionality to latex. The LaTeX code
 
 will give you the same output as above.
 
-## Notes
-* Include `\usepackage{hyperref}` in your preamble.
-* You can include this package by `\usepackage{linking}` after including
-  `linking.sty` in the folder you're compiling in.
-
 ## Limitations
-* Doesn't allow the Markdown formatting `[this text will be shown][private_name]`
+* Doesn't allow the Markdown formatting `[this text will be
+  shown][private_name]` (or is this a feature?)
 * Doesn't overwrite the `\link` command. It was easier to use a prefix (the
   reason you see `\SSlink` not `link`.
