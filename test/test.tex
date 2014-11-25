@@ -2,22 +2,20 @@
 \documentclass{article}
 % making hyperlinks work and look nice
 \usepackage{xcolor}
-\usepackage[colorlinks = true,
-            linkcolor = blue,
-            urlcolor  = blue,
-            citecolor = blue,
+\usepackage[colorlinks  = true,
+            linkcolor   = blue,
+            urlcolor    = blue,
+            citecolor   = blue,
             anchorcolor = blue]{hyperref}
 
 % we would normally use \usepackage{linking}. I use \usepackage{../linking} only because I want linking in the parent folder
 \usepackage{../linking}
 
 % defining our links
-\SSdefine{link}{http://www.google.com}
-\SSdefine{Scott}{http://scottsievert.com}
-\SSdefine{testing}{http://www.reddit.com}
 \SSdefine{Bode Miller}{https://en.wikipedia.org/wiki/Bode_Miller}
 
 \begin{document}
-\SSlink{Bode Miller} has won 6 Olympic medals and 5 World Cup medals in every ski racing discipline.
+
+\SSlink{Bode Miller} has won 6 Olympic medals and 5 World Cup medals.
 
 \end{document}
